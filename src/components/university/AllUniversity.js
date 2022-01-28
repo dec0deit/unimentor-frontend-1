@@ -34,14 +34,14 @@ export default function AllUniversity() {
             method: 'GET',
             headers: { 'Authorization': mytoken }
         })
-            .then(response => response.json())
-            .then(data => {
-                console.log("data.universities");
-                console.log(data.universities);
-                setdata(data.universities);
-                setFormValues(data.universities)
+        .then(response => response.json())
+        .then(data => {
+            console.log("data.universities");
+            console.log(data.universities);
+            setdata(data.universities);
+            setFormValues(data.universities)
                 // this.setState({ data: data.universityCourses })
-            })
+        })
 
 
 
