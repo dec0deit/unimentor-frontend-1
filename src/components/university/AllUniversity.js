@@ -28,7 +28,7 @@ export default function AllUniversity() {
 
         // start for fetch university
 
-        const url = "universities";
+        const url = "https://unimentor-backend.herokuapp.com/universities";
 
         fetch(url, {
             method: 'GET',
