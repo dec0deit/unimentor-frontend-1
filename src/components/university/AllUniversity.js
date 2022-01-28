@@ -30,6 +30,7 @@ export default function AllUniversity() {
 
         const url = "https://unimentor-backend.herokuapp.com/universities";
 
+        
         fetch(url, {
             method: 'GET',
             headers: { 'Authorization': mytoken }
