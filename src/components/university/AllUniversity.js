@@ -29,8 +29,6 @@ export default function AllUniversity() {
         // start for fetch university
 
         const url = "https://unimentor-backend.herokuapp.com/universities";
-
-        
         fetch(url, {
             method: 'GET',
             headers: { 'Authorization': mytoken }
@@ -41,12 +39,7 @@ export default function AllUniversity() {
             console.log(data.universities);
             setdata(data.universities);
             setFormValues(data.universities)
-                // this.setState({ data: data.universityCourses })
         })
-
-
-
-
     }, [])
 
 
